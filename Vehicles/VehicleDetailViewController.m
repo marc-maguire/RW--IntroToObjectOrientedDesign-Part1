@@ -55,7 +55,13 @@
 {
     // Update the user interface for the detail item.
     if (self.detailVehicle) {
+        
+        self.title = [self.detailVehicle vehicleTitleString];
+        
+        //setup the basic details string based on the properties in the base vehicle class
         //TODO: Fill this in.
+        self.title = [self.detailVehicle vehicleTitleString];
+        self.vehicleDetailsLabel.text = [self.detailVehicle vehicleDetailsString];
     }
 }
 
